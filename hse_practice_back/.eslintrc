@@ -1,0 +1,42 @@
+{
+  "env": {
+  "browser": true,
+    "es2021": true,
+    "node": true
+},
+  "extends": [
+  "eslint:recommended",
+  "prettier"
+],
+  "parser": "@typescript-eslint/parser",
+  "settings": {
+  "import/resolver": {
+    "typescript": {
+      "alwaysTryTypes": true
+    }
+  }
+},
+  "parserOptions": {
+  "ecmaFeatures": {
+    "jsx": true
+  },
+  "ecmaVersion": 12,
+    "sourceType": "module"
+},
+  "plugins": [
+  "@typescript-eslint",
+  "prettier"
+],
+  "rules": {
+  "prettier/prettier": "warn",
+    "@typescript-eslint/no-unused-vars": "warn",
+    "import/no-webpack-loader-syntax": "off",
+    "no-unused-vars": "warn",
+    "import/no-internal-modules": "off",
+    "boundaries/element-types": "off",
+    "import/order": "off"
+},
+  "globals": {
+  "NodeJS": true
+}
+}
