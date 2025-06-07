@@ -1,12 +1,9 @@
 import { BadRequestException, Injectable } from '@nestjs/common';
 import { BalanceDTO } from 'src/tron/dto/balanceDTO';
-import {
-  getTransactionHistory,
-  getTronBalance,
-  TronTransactionInfo,
-} from 'src/tron/api/api';
+import { getTransactionHistory, getTronBalance } from 'src/tron/api/api';
 import { TRON_TRX_CONTRACT, TRON_USDT_CONTRACT } from 'src/tron/utils';
 import { TransactionsDTO } from 'src/tron/dto/transactionsDTO';
+import { TronTransactionInfo } from 'src/tron/api/types';
 
 @Injectable()
 export class TronService {

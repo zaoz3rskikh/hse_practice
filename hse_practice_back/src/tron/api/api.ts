@@ -4,6 +4,7 @@ import {
   tronWeb,
 } from 'src/tron/utils';
 import axios, { AxiosResponse } from 'axios';
+import { TronTransactionInfo } from 'src/tron/api/types';
 
 export const getTronBalance = async (addr: string) => {
   tronWeb.setAddress(TRON_USDT_CONTRACT);
@@ -20,21 +21,6 @@ export const getTronBalance = async (addr: string) => {
     usdt: Number(usdtBalace.toString()) / TRON_BALANCE_DIVIDER,
     trx: trxBalance / TRON_BALANCE_DIVIDER,
   };
-};
-
-export type TronTransactionInfo = {
-  transaction_id: string;
-  token_info: {
-    symbol: string;
-    address: string;
-    decimals: number;
-    name: string;
-  };
-  block_timestamp: number;
-  from: string;
-  to: string;
-  type: string;
-  value: string;
 };
 
 export const getTransactionHistory = async (
