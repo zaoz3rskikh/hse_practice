@@ -13,11 +13,9 @@ export default observer(function CheckTronBalanceWidget() {
     <CheckBalanceFeature
       model={model}
       balanceSlot={
-        <Box
-          sx={{ opacity: model?.balance?.usdt && model?.balance?.trx ? 1 : 0 }}
-        >
-          <Typography>USDT: {model?.balance?.usdt}</Typography>
-          <Typography>TRX: {model?.balance?.trx}</Typography>
+        <Box sx={{ opacity: model?.balance ? 1 : 0 }}>
+          <Typography>USDT: {model?.balance?.usdt || 'No data'}</Typography>
+          <Typography>TRX: {model?.balance?.trx || 'No data'}</Typography>
         </Box>
       }
     />
