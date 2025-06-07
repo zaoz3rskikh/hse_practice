@@ -2,8 +2,7 @@ import { makeAutoObservable } from 'mobx';
 import {
   getSolanaTransactionInfo,
   SolanaTransactionInfo,
-  ShortTransactionInfo,
-} from 'api/solanaApi';
+} from 'entities/solana/solanaApi';
 import axios from 'axios';
 
 export class SolanaTransactionDetailsModel {

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { WalletBalanceModel } from 'entities/walletBalanceModel';
-import { getSolanaBalance, SolanaBalance } from 'api/solanaApi';
+import { getSolanaBalance, SolanaBalance } from 'entities/solana/solanaApi';
 import CheckBalanceFeature from 'features/checkBalanceFeature';
 import { Box, Typography } from '@mui/material';
 import { observer } from 'mobx-react-lite';

@@ -1,6 +1,6 @@
 import { makeAutoObservable } from 'mobx';
 import axios from 'axios';
-import { getTronTransactions, TronTransaction } from 'api/tronApi';
+import { getTronTransactions, TronTransaction } from 'entities/tron/tronApi';
 
 export class TronTransactionListModel {
   private _wallet: string = '';

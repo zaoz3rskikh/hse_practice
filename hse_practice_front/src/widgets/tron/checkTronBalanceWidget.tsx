@@ -3,7 +3,7 @@ import { WalletBalanceModel } from 'entities/walletBalanceModel';
 import CheckBalanceFeature from 'features/checkBalanceFeature';
 import { Box, Typography } from '@mui/material';
 import { observer } from 'mobx-react-lite';
-import { getTronBalance, TronBalance } from 'api/tronApi';
+import { getTronBalance, TronBalance } from 'entities/tron/tronApi';
 
 export default observer(function CheckTronBalanceWidget() {
   const [model] = useState(
