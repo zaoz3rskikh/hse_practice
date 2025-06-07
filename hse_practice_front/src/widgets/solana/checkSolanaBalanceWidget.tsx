@@ -14,11 +14,9 @@ export default observer(function CheckSolanaBalanceWidget() {
     <CheckBalanceFeature
       model={model}
       balanceSlot={
-        <Box
-          sx={{ opacity: model?.balance?.usdt && model?.balance?.usdc ? 1 : 0 }}
-        >
-          <Typography>USDT: {model?.balance?.usdt}</Typography>
-          <Typography>USDC: {model?.balance?.usdc}</Typography>
+        <Box sx={{ opacity: model?.balance ? 1 : 0 }}>
+          <Typography>USDT: {model?.balance?.usdt || 'No data'}</Typography>
+          <Typography>USDC: {model?.balance?.usdc || 'No data'}</Typography>
         </Box>
       }
     />
