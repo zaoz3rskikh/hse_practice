@@ -17,7 +17,7 @@ export default observer(function CheckTronBalanceWidget() {
           sx={{ opacity: model?.balance?.usdt && model?.balance?.trx ? 1 : 0 }}
         >
           <Typography>USDT: {model?.balance?.usdt}</Typography>
-          <Typography>USDC: {model?.balance?.trx}</Typography>
+          <Typography>TRX: {model?.balance?.trx}</Typography>
         </Box>
       }
     />

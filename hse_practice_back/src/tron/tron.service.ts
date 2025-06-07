@@ -4,7 +4,7 @@ import {
   getTransactionHistory,
   getTronBalance,
   TronTransactionInfo,
-} from 'src/tron/api';
+} from 'src/tron/api/api';
 import { TRON_TRX_CONTRACT, TRON_USDT_CONTRACT } from 'src/tron/utils';
 import { TransactionsDTO } from 'src/tron/dto/transactionsDTO';
 
